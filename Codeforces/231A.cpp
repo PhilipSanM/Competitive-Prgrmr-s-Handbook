@@ -1,24 +1,19 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-	int number_problems, solve = 0;
-	int bit, flag = 0;
-	cin >> number_problems;
-	for(int i=0; i < number_problems; i++){
-		for(int j=0; j<3 ; j++){
-			cin >> bit;
-			if (bit == 1){
-				flag++;
-			}
-		}
-		if (flag >= 2)
-		{
-			solve++;
-		}
-		flag=0;
-	}
-	cout << solve << endl;
+bool detectCapitalUse(string word) {
+	auto num_capitals = count_if(word.begin(),word.end(),
+		[]( char c ){ return isupper(c); } );
 
+	if (num_capitals == 0 )return true;else if(num_capitals == 1 && isupper(word[0]))return true; else if(num_capitals == (int)word.size()) return true; else return false;
+	
+	
+}
+
+int main()
+{	
+	string s;
+	cin >> s;
+	cout << detectCapitalUse(s);
 	return 0;
 }
