@@ -49,3 +49,7 @@ def max_value(list):
         return list[0] if list[0] > sub_max else sub_max
 
 print(max_value([4,7,3,6,40])) 
+
+# 4.4
+# Qick Sort
+
