@@ -75,7 +75,9 @@ class Solution(object):
             point_result.val = carry
         
         return result
-            
+
+           # Time complexity: O(N)
+# Space Complexity: O(N) 
         
 
 
