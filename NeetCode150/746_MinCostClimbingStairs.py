@@ -32,3 +32,5 @@ class Solution(object):
             dp[1] = temp
 
         return min(dp[1], dp[0] + cost[-1])
+    
+    # Post: https://leetcode.com/problems/min-cost-climbing-stairs/solutions/3697890/8-a-1-dp-buttom-up-solution-using-python/
